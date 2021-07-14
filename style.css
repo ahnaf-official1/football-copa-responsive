@@ -1,5 +1,6 @@
 /* fonts from google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /*----------- 
 Default designs 
@@ -8,15 +9,60 @@ Default designs
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
+}
+/* navbar design */
+nav {
+  background-color: #2d25a0;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul {
+  margin-top: 42px;
+  margin-left: 144px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.login-form {
+  text-decoration: none;
+  width: 123px;
+  margin-top: 42px;
+  margin-right: 124px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 24px;
+  font-weight: 500;
+  background-color: #e02c6d;
+  text-align: center;
+}
+.login-form a{
+  padding-left: ;
+}
+.fas {
+  margin-right: 6px;
 }
 /* ----------------
 first section design
 ------------------- */
-
+.first-container {
+  background-color: #2d25a0;
+}
 .flexible-container {
   display: flex;
-  margin-bottom: 150px;
-  background-color: #2d25a0;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 70px;
   width: 100%;
 }
 .half-width {
@@ -26,11 +72,17 @@ first section design
 .half-width h1 {
   font-size: 55px;
   color: white;
-  margin-top: 170px;
+  /* margin-top: 121px; */
+  margin-left: 105px;
 }
 .half-width img {
   width: 90%;
-  margin-top: 100px;
+  margin-top: 67px;
+  padding-left: 0%;
+  margin-bottom: 86px;
+}
+.first-image{
+  padding: 0%;
 }
 .link-button {
   text-decoration: none;
@@ -38,17 +90,109 @@ first section design
   padding: 10px 40px;
   width: 168px;
   height: 24px;
-  left: 24px;
-  top: 10px;
   color: white;
   font-weight: 500;
-  background-color: #E02C6D;
+  background-color: #e02c6d;
+  margin-left: 104px;
 }
-.link-button a{
-    margin-left: 8px;
+.link-button a {
+  margin-left: 8px;
 }
-.fas fa-arrow-right{
-    width: 24px;
+.fas fa-arrow-right {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+/* player-container design from here */
+.player-container {
+  margin-left: 195px;
+  margin-right: 195px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 45px;
+}
+.player {
+  width: 330px;
+  height: 474px;
+  box-shadow: 0px 0px 40px #acacac;
+}
+.player-image img {
+  width: 300px;
+  height: 256px;
+  margin: 15px;
+}
+.player-details {
+  margin: 16px;
+  margin-top: 0;
+}
+.player-details h3 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.player-info {
+  font-style: 100;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+/* --------Responsive design(Media Query) --------
+-------------------------------------------*/
+@media only screen and (max-width:688px){
+  header{
+    display: none;
+  }
+  .flexible-container{
+      width: 100%;
+      display: block;
+  }
+  .player{
+      flex-direction: column;
+      margin-right: 10px;
+      justify-content: center;
+  }
+  .players{
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+  }
+   .half-width{
+     width: 100%;
+     padding-left: 0%;
+   }
+  .half-width h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0%;
+  }
+  .half-width img {
+    width: 90%;
+    margin: ;
+    padding-left: 0%;
+  
+  }
+  .first-image{
+    padding: 0%;
+  }
+  .link-button {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 40px;
+    width: 168px;
     height: 24px;
-    margin-left: 8px; 
+    color: white;
+    font-weight: 500;
+    background-color: #e02c6d;
+    margin-left: 10px;
+  }
+  .link-button a {
+    margin-left: 8px;
+  }
 }
