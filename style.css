@@ -29,6 +29,10 @@ nav ul li a {
   text-decoration: none;
   color: whitesmoke;
 }
+nav ul li a:hover{
+  color: black;
+  cursor: pointer;
+}
 nav ul li {
   list-style: none;
   display: inline-block;
@@ -48,6 +52,9 @@ nav ul li {
 }
 .login-form a{
   padding-left: ;
+}
+.login-form a:hover{
+  color: black;
 }
 .fas {
   margin-right: 6px;
@@ -100,7 +107,8 @@ first section design
   margin-left: 8px;
 }
 .link-button:hover{
-  transform: scale(1.1);
+  color: rgb(100, 100, 100);
+  background-color: #861d4083;
 }
 .fas fa-arrow-right {
   width: 24px;
@@ -371,7 +379,7 @@ footer p{
     grid-row-gap: 20px;
   }
   .photos img{
-    width: 100%;
+    width: 90%;
     margin-left: 5px;
   }
   .photo-1 img{
