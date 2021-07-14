@@ -157,6 +157,7 @@ first section design
       flex-direction: column;
       margin-right: 10px;
       justify-content: center;
+      height: 492px;
   }
   .players{
       grid-template-columns: repeat(1, 1fr);
