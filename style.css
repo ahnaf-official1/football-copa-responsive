@@ -64,6 +64,7 @@ first section design
   align-items: center;
   margin-bottom: 70px;
   width: 100%;
+  justify-content: center;
 }
 .half-width {
   width: 50%;
@@ -142,10 +143,97 @@ first section design
   margin-top: 0;
   margin-bottom: 33px;
 }
+/* ---------------
+Highlights part design 
+----------------------*/
+.highlight-container{
+  margin-bottom: 0%;
+  margin-top: 50px;
+}
+.highlights-details h1{
+  color: black;
+  font-size: 48px;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}
+.highlights-details p{
+  margin-top: 0%;
+  margin-bottom: 20px;
+  width: 404px;
+}
+.highlights-details{
+  padding-left: 10%;
+}
+.image-match{
+  padding-left: 0%;
+}
+.link-after{
+  margin-left: 0;
+}
+/* ---------------------
+Blogs work from here 
+----------------------*/
+.blogs-container{
+  margin-left: 100px;
+  margin-right: 80px;
+}
+.blogs-container h1{
+  font-size: 50px;
+  margin-top: -10px;
+}
+.blogs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  align-items: center;
+}
+.blog-banner img{
+  width: 80%;
+}
+.blog-info h3{
+  font-size: 25px;
+  margin-top: 0;
+}
+.blog-info p{
+  margin-bottom: 0;
+}
+/* ---------------
+Photo gallery section 
+--------------------*/
+.photo-gallery{
+  width: 1200px;
+  height: 540px;
+  margin-left: 77px;
+}
+.photo-gallery h1{
+  color: black;
+  font-size: 48px;
+  margin-left: 0%;
+  margin-bottom: 30px;
+}
+.photos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 20px;
 
+}
+.photos img{
+  width: 100%;
+}
+.photo-1 img{
+  height: 258px;
+}
+.photo-4 img{
+  height: 254px;
+}
 /* --------Responsive design(Media Query) --------
 -------------------------------------------*/
 @media only screen and (max-width:688px){
+  /* ----------------
+  Header or navbar is only applicable for pc or dekstop size.
+  So there will be no navbar in any other devices. 
+  -------------------------------------------*/
   header{
     display: none;
   }
