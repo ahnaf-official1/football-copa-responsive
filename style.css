@@ -207,10 +207,10 @@ Blogs work from here
 Photo gallery section 
 --------------------*/
 .photo-gallery{
-  width: 1200px;
+  width: 1400px;
   height: 540px;
   margin-left: 77px;
-  margin-bottom: 200px;
+  margin-bottom: 220px;
 }
 .photo-gallery h1{
   color: black;
@@ -229,16 +229,16 @@ Photo gallery section
   width: 100%;
 }
 .photo-1 img{
-  height: 258px;
+  height: 302px;
 }
 .photo-4 img{
-  height: 254px;
+  height: 300px;
 }
 /* ------------
 Footer design 
 ----------------*/
 .logo img{
-  width: 100%;
+  width: 483px;
   display: block;
   margin-left: auto;
   margin-right: auto;
