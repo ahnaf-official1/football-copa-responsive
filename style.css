@@ -357,7 +357,7 @@ footer p{
     width: 100%;
     height: 540px;
     margin-left: 0%;
-    margin-bottom: 1400px;
+    margin-bottom: 1200px;
   }
   .photo-gallery h1{
     color: black;
@@ -386,6 +386,146 @@ footer p{
   .blogs{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 24px;
+    align-items: center;
+  }
+  .blogs-container{
+    margin-left: 15px;
+    margin-right: 8px;
+  }
+  .blogs-container h1{
+    font-size: 50px;
+    margin-top: -10px;
+    margin-left: 0%;
+  }
+  .blog-banner img{
+    width: 80%;
+  }
+  .blog-info h3{
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .blog-info p{
+    margin-bottom: 0;
+  }
+  .highlight-container{
+    margin-bottom: 0%;
+    margin-top: 50px;
+  }
+  .highlights-details h1{
+    color: black;
+    font-size: 40px;
+    margin-left: 0%;
+    margin-bottom: 0%;
+  }
+  .highlights-details p{
+    margin-top: 0%;
+    margin-bottom: 20px;
+    width: 340px;
+  }
+  .highlights-details{
+    padding-left: 2%;
+  }
+  .link-after{
+    margin: 0%;
+  }
+  .logo img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* for tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+  header{
+    display: none;
+  }
+  .flexible-container{
+      width: 100%;
+      display: block;
+  }
+  .first-container{
+    padding: 0;
+    margin: 0;
+  }
+  .player{
+      flex-direction: column;
+      margin-right: 10px;
+      justify-content: center;
+      height: 492px;
+  }
+  .players{
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+  }
+   .half-width{
+     width: 100%;
+     padding-left: 0%;
+   }
+  .half-width h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0%;
+  }
+  .half-width img {
+    width: 90%;
+    margin: ;
+    padding-left: 0%;
+  
+  }
+  .first-image{
+    padding: 0%;
+  }
+  .link-button {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 40px;
+    width: 168px;
+    height: 24px;
+    color: white;
+    font-weight: 500;
+    background-color: #e02c6d;
+    margin-left: 10px;
+  }
+  .link-button a {
+    margin-left: 2px;
+  }
+  .photo-gallery{
+    width: 100%;
+    height: 540px;
+    margin-left: 0%;
+    margin-bottom: 398px;
+  }
+  .photo-gallery h1{
+    color: black;
+    font-size: 48px;
+    margin-left: 0%;
+  }
+  .photos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+  }
+  .photos img{
+    width: 100%;
+    margin-left: 5px;
+  }
+  .photo-1 img{
+    height: 258px;
+  }
+  .photo-4 img{
+    height: 254px;
+  }
+  .footer-container{
+    display: block;
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 24px;
     align-items: center;
   }
